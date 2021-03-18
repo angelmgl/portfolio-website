@@ -8,6 +8,12 @@
     --body-bg: #efebfa;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 10px;
@@ -89,6 +95,14 @@ a {
     color: transparent;
     -webkit-text-stroke: 1.5px #5a24e22f;
     z-index: -1;
+}
+
+
+
+.buttons .primary-btn.outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
 }
 
 /* Hero Section */
@@ -456,6 +470,87 @@ a {
 @media only screen and (max-width: 768px) {
     #stats .all-items {
         flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* About section styles */
+#about {
+    padding: 15rem 0;
+}
+
+#about .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#about .left {
+    padding: 2rem;
+    text-align: center;
+}
+
+#about .left .card {
+    box-shadow: 0px 0px 20px #4705fc33;
+    padding: 3rem;
+    border-radius: 12px;
+    min-height: 400px;
+}
+
+#about .left .card .img {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+#about .left .card .img img {
+    object-fit: cover;
+}
+
+#about .left .card .card-desc {
+    color: var(--secondary-gray);
+    margin-bottom: 2rem;
+}
+
+#about .left .card .card-name {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+#about .left .card .card-subtitle {
+    font-size: 1.4rem;
+}
+
+#about .subheading {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+#about .right .slogan {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#about .right .right-text {
+    color: var(--secondary-gray);
+}
+
+@media only screen and (max-width: 768px) {
+    #about .wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #about .right .buttons {
+        flex-direction: column;
+    }
+
+    #about .right .buttons a {
+        width: 100%;
         text-align: center;
     }
 }
