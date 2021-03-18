@@ -414,3 +414,48 @@ a {
         gap: 50px;
     }
 }
+
+/* stats styles */
+#stats {
+    padding: 20rem 0 10rem 0;
+}
+
+#stats .all-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stats .all-items .item {
+    padding: 2rem;
+}
+
+#stats .number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 8rem;
+    margin: 30px 0;
+}
+
+#stats .stats-subheading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#stats .all-items .item:nth-child(1) {
+    background-color: #ffef0050;
+}
+
+#stats .all-items .item:nth-child(2) {
+    background-color: #00ffab50;
+}
+
+#stats .all-items .item:nth-child(3) {
+    background-color: #4705fc50;
+}
+
+@media only screen and (max-width: 768px) {
+    #stats .all-items {
+        flex-direction: column;
+        text-align: center;
+    }
+}
