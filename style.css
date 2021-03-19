@@ -104,6 +104,38 @@ a {
     border: 2px solid var(--primary-color);
 }
 
+/* Scroll top button */
+
+.scroll-top {
+	height: 60px;
+	width: 60px;
+	background-color: white;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px rgba(71, 40, 182, 0.226);
+	z-index: 100;
+	/* hover effect default */
+	transform: scale(0.9);
+	transition: 0.3s ease-in-out transform;
+	/* for centering the icon */
+	/* display: flex; */
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.scroll-top svg {
+	width: 50%;
+	color: black;
+	pointer-events: none;
+}
+
+.scroll-top:hover {
+	transform: scale(1);
+}
+
 /* Hero Section */
 
 #hero {
